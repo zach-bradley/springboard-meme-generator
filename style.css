@@ -1,0 +1,115 @@
+html body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDC79B;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#memeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#memeForm div {
+  margin: 5px;
+}
+
+input {
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  background-color: #EDC79B;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+button:hover {
+  background-color: rgb(238, 212, 182);
+}
+
+#memeFormContainer {
+  text-align: center;
+  background-color: #FF5666;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  width: 100vw;
+}
+#memeFormContainer h1 {
+  margin: 5px;
+}
+
+#memeContainer {
+  width: 100vw;
+  text-align: center;
+}
+
+#memeList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: 'Roboto';
+}
+
+.top {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom {  
+  position: absolute;
+  text-align: center;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.meme {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: white;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.meme div {
+  position: absolute;
+  background: rgba(1,1,1,0.8);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  line-height: 400px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.meme:hover > div {
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="memeFormContainer">
+    <h1>Meme Generator:</h1>
+    <form id="memeForm">
+      <div> 
+        <label for="image">Add Image:</label>
+        <input type="url" id="image" autocomplete="off" placeholder="https://i.imgflip.com/4t0m5.jpg">
+      </div>
+      <div> 
+        <label for="topText">Top Text:</label>
+        <input type="text" id="topText" autocomplete="off" placeholder="Wow">
+      </div>
+      <div> 
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" autocomplete="off" placeholder="Such empty">
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+  <div id="memeContainer">
+    <h1>Your Memes:</h1>
+    <div id="memeList">
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
